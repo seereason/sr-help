@@ -1,0 +1,39 @@
+Source: haskell-help
+Priority: optional
+Section: misc
+Maintainer: Jeremy Shaw <jeremy@n-heptane.com>
+Build-Depends: debhelper (>= 5.0),
+               haskell-devscripts-cdbs,
+               cabal-debian,
+               ghc6 (>= 6.8),
+               ghc6-doc,
+               haddock (>= 2.1.0),
+               ghc6-prof,
+               libghc6-extra-prof (>= 1.23),
+               haskell-extra-doc (>= 1.23)
+Standards-Version: 3.7.2.2
+Homepage: http://src.seereason.com/haskell-help
+
+Package: libghc6-help-dev
+Architecture: any
+Section: libdevel
+Depends: ${haskell:Depends}
+Description: Generate manpages, command-line, and option parsing from a unified spec
+  .
+  This package contains the normal library files.
+
+Package: libghc6-help-prof
+Architecture: any
+Section: libdevel
+Depends: ${haskell:Depends}
+Description: Generate manpages, command-line, and option parsing from a unified spec
+  .
+  This package contains the libraries compiled with profiling enabled.
+
+Package: haskell-help-doc
+Architecture: all
+Section: libdevel
+Depends: ${haskell:Depends}
+Description: Generate manpages, command-line, and option parsing from a unified spec
+  .
+  This package contains the documentation files.
