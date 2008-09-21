@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 5.0),
                haddock (>= 2.1.0),
                ghc6-prof,
                libghc6-extra-prof (>= 1.23),
-               haskell-extra-doc (>= 1.23)
+               libghc6-extra-doc (>= 1.23)
 Standards-Version: 3.7.2.2
 Homepage: http://src.seereason.com/haskell-help
 
@@ -30,8 +30,8 @@ Description: Generate manpages, command-line, and option parsing from a unified 
   .
   This package contains the libraries compiled with profiling enabled.
 
-Package: haskell-help-doc
-Architecture: all
+Package: libghc6-help-doc
+Architecture: any
 Section: libdevel
 Depends: ${haskell:Depends}
 Description: Generate manpages, command-line, and option parsing from a unified spec
