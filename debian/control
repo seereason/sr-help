@@ -24,7 +24,7 @@ Description: Generate manpages, command-line, and option parsing from a unified 
 Package: libghc6-help-prof
 Architecture: any
 Section: libdevel
-Depends: ${haskell:Depends}
+Depends: ${haskell:Depends}, libghc6-help-dev
 Description: Generate manpages, command-line, and option parsing from a unified spec
   .
   This package contains the libraries compiled with profiling enabled.
