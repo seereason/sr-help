@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 5.0),
                haskell-devscripts, hscolour,
                ghc (>= 6.8),
                ghc-doc,
-               haddock (>= 2.1.0),
+               ghc-haddock,
                ghc-prof,
                libghc-extra-prof (>= 1.23),
                libghc-extra-doc (>= 1.23)
