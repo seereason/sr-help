@@ -2,7 +2,7 @@ module Text.Help.Util where
 
 import Control.Monad
 import Data.List
-import Data.Monoid
+import Data.Monoid (Monoid(..))
 import Text.Help.Man
 import Text.Help.Doc
 import Text.Help.DSL

@@ -1,6 +1,6 @@
 module Text.Help.Markup where
 
-import Data.Monoid
+import Data.Monoid (Monoid(..))
 
 newtype Elements = Elements [Element]
       deriving (Show, Read, Eq)

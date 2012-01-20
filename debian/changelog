@@ -1,3 +1,9 @@
+haskell-help (0.9.2) unstable; urgency=low
+
+  * Restrict imports of Data.Monoid to eliminate ambiguous symbols.
+
+ -- David Fox <dsf@seereason.com>  Fri, 20 Jan 2012 09:07:22 -0800
+
 haskell-help (0.9.1) unstable; urgency=low
 
   * Add missing dependency on libghc6-help-dev to libghc6-help-prof.
