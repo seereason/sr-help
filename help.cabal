@@ -17,7 +17,7 @@ Flag split-base
 
 Library
   if flag(split-base)
-    Build-Depends:     base >= 3, pretty, Extra >= 1.23
+    Build-Depends:     base >= 3, pretty, sr-extra >= 1.23
   else
     Build-Depends:     base < 3
   Exposed-Modules:   
