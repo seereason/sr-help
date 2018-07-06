@@ -2,6 +2,7 @@ module Text.Help.Markup where
 
 import Data.Semigroup (Semigroup(..))
 import Data.Monoid (Monoid(..))
+import Prelude hiding ((<>))
 
 newtype Elements = Elements [Element]
       deriving (Show, Read, Eq)
