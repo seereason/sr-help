@@ -1,13 +1,17 @@
 module Text.Help.Markup where
 
+import Data.Semigroup (Semigroup(..))
 import Data.Monoid (Monoid(..))
 
 newtype Elements = Elements [Element]
       deriving (Show, Read, Eq)
 
+instance Semigroup Elements where
+    (Elements xs) <> (Elements ys) = Elements (xs ++ ys)
+
 instance Monoid Elements where
     mempty = Elements []
-    (Elements xs) `mappend` (Elements ys) = Elements (xs ++ ys)
+    mappend = (<>)
 
 data Element
     = Paragraph ParagraphStyle -- label font is not changed, but body is
