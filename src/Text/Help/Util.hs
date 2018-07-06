@@ -3,6 +3,7 @@ module Text.Help.Util where
 import Control.Monad
 import Data.List
 import Data.Monoid (Monoid(..))
+import Prelude hiding ((<>))
 import Text.Help.Man
 import Text.Help.Doc
 import Text.Help.DSL

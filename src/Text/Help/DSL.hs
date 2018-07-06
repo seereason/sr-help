@@ -11,6 +11,7 @@ module Text.Help.DSL
     ) where
 
 import Data.List
+import Prelude hiding ((<>))
 import Text.Help.Markup
 import Text.Help.Man
 
